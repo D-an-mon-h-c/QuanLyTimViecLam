@@ -1,0 +1,66 @@
+
+.navbar {
+    width:100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    position: fixed;
+    background: #fff;
+    z-index: 20;
+    border-bottom: 1px solid #f2f2f2;
+    top: 0;
+}
+
+/*Logo Brand*/
+
+.brand .logo-brand img {
+    width: 150px;
+}
+
+/*Menu Items*/
+
+.menuItems {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.menuItems .groupItem {
+    margin-right: 8px;
+}
+
+.menuItems .groupItem a {
+    color: #000;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.menuItems .groupItem:hover > a {
+    color: #01249C;
+    background: #F6F6F3;
+}
+
+.dropdow {
+    display: none;
+}
+
+.right-menu {
+    display: flex;
+}
+
+.btn {
+    width: 120px;
+    margin-right: 12px;
+    font-weight: 600;
+    border-color: #01249c;
+    color: #01249C;
+}
+
+.btn:hover {
+    background: #01249C;
+}

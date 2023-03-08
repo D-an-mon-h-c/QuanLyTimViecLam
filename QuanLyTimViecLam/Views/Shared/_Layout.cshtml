@@ -3,43 +3,331 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - QuanLyTimViecLam</title>
+    <title>@ViewData["Title"] - JobFinder</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/QuanLyTimViecLam.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">QuanLyTimViecLam</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+
+            <!--Logo brand-->
+            <div class="brand">
+                <a class="logo-brand">
+                    <img src="./image/Logo.png"/>
+                </a>
             </div>
+            <!--End logo brand-->
+
+            <!--Menu Items-->
+            <ul class="menuItems">
+                <li class="groupItem">
+                    <a href="#">Đăng tin tuyển dụng</a>
+                    <div class="dropdow">
+                        <ul class="menu-left">
+                            <li class="item-left">
+                                <a href="#">Đăng việc theo dự án</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Đăng việc bán thời gian</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Đăng việc toàn thời gian</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Tạo cuộc thi thiết kế</a>
+                            </li>
+                        </ul>
+
+                        <div class="image-right">
+                            <a href="#">
+                                <img src="./image/NavbarImage/job_Image.png"/>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="groupItem">
+                    <a href="#">Tìm việc làm</a>
+                    <div class="dropdow">
+                        <ul class="menu-left">
+                            <li class="item-left">
+                                <a href="#">Việc làm Online</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Cuộc thi thiết kế</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Việc làm Fulltime</a>
+                            </li>
+                        </ul>
+
+                        <div class="image-right">
+                            <a href="#">
+                                <img src="./image/NavbarImage/job_Image.png" />
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="groupItem">
+                    <a href="#">Hồ sơ năng lực</a>
+                    <div class="dropdow">
+                        <ul class="menu-left">
+                            <li class="item-left">
+                                <a href="#">Hồ sơ JobFinder</a>
+                            </li>
+
+                            <li class="item-left">
+                                <a href="#">Sản phẩm đã làm</a>
+                            </li>
+                        </ul>
+
+                        <div class="image-right">
+                            <a href="#">
+                                <img src="./image/NavbarImage/job_Image.png" />
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <!--End Menu Items-->
+
+            <!--Right Menu-->
+            <ul class="right-menu">
+                <li class="right-item">
+                    <a class="btn btn-outline-primary">Đăng nhập</a>
+                </li>
+                <li class="right-item">
+                    <a class="btn btn-outline-primary">Đăng ký</a>
+                </li>
+            </ul>
+            <!--End Right Menu-->
+
         </nav>
     </header>
-    <div class="container">
+    <div class="container" style="margin-top: 80px">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - QuanLyTimViecLam - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+
+        <div class="row-items">
+            <div class="left-block">
+                <div class="left-subBlock">
+                    <h4>
+                        <a title="Xây dựng sự nghiệp">Xây dựng sự ngiệp</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Việc làm tốt nhất</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc làm lương cao</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc làm quản lý</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc làm từ xa</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc làm bán thời gian</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="left-subBlock">
+                    <h4>
+                        <a title="Việc phổ biến nhất">Việc phổ biến nhất</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Việc làm web</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc lập trình di động</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc làm SEO</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc maketing online</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc dịch thuật</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc viết lách</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc thiết kế</a>
+                        </li>
+                        <li>
+                            <a href="#">Việc quản lý fanpage</a>
+                        </li>
+                        <li>
+                            <a href="#">Cuộc thi thiết kế</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="left-subBlock">
+                    <h4>
+                        <a title="Được thuê nhiều">Được thuê nhiều</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Freelancer maketing online</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer làm web</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer mobile app</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer SEO</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer thiết kế</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer thiết kế banner</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer viết bài</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer dịch thuật</a>
+                        </li>
+                        <li>
+                            <a href="#">Freelancer nhập dữ liệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-block">
+                <div class="right-subBlock">
+                    <h4>
+                        <a title="Freelancer">Freelancer</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Hướng dẫn freelancer kiếm tiền</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn hoàn thiện hồ sơ</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn chào giá dự án</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn nhận thanh toán</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn xác thực tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn liên hệ khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn mua credit</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn nâng cấp tài khoản freelancer</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn tạo gói dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-subBlock">
+                    <h4>
+                        <a title="Khách hàng">Khách hàng</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Cách thuê freelancer</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn đăng việc</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn xác thực email</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn chọn freelancer</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn quản lý dự án</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn liên hệ freelancer</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn nâng cấp tài khoản khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn mua gói dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-subBlock">
+                    <h4>
+                        <a title="Giới thiệu">Giới thiệu</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Thành viên</a>
+                        </li>
+                        <li>
+                            <a href="#">Giảng viên hướng dẫn</a>
+                        </li>
+                        <li>
+                            <a href="#">Kiến thức JobFinder</a>
+                        </li>
+                        <li>
+                            <a href="#">Bog Jobfinder</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-subBlock">
+                    <h4>
+                        <a title="Liên hệ">Liên hệ</a>
+                    </h4>
+                    <ul class="subBlock-menuItem">
+                        <li>
+                            <a href="#">Trợ giúp</a>
+                        </li>
+                        <li>
+                            <a href="#">Câu hỏi thường gặp</a>
+                        </li>
+                        <li>
+                            <a href="#">Thông báo lỗi</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+        <div class="bottom-logo"></div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
