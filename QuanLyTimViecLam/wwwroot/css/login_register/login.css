@@ -1,0 +1,248 @@
+.content {
+    display: flex;
+}
+
+
+.form-input {
+    width: 50%;
+    height: auto;
+}
+
+.content .form-input {
+    padding: 52px;
+}
+
+.content .form-input > a > img {
+    width: 150px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.form-input .caption > h3 {
+    font-size: 18px;
+    font-weight:700;
+}
+
+.form-input .caption > p {
+    font-size: 14px;
+    color: #6c757d;
+    width: 370px;
+}
+
+.box-input {
+    margin-bottom: 24px;
+}
+
+.form-login .box-input .title {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.form-login .box-input .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+}
+
+.form-login .box-input .input-group > ion-icon {
+    padding: 12px;
+    color: #01249C;
+    font-size: 24px;
+}
+
+.form-login .box-input .input-group > input {
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+#btnLogin {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #00B67C;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 24px;
+}
+
+#btnLogin:hover {
+    background: #00DB95;
+}
+
+.social-login {
+    margin-bottom: 24px;
+}
+
+.social-login > p {
+    width: 100%;
+    text-align: center;
+}
+
+.social-login .list-social-button {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+
+.social-login .list-social-button .group-button {
+    padding: 6px 12px;
+    width: 220px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.social-login .list-social-button .group-button > ion-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+
+.social-login .list-social-button .group-button > button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.btn-login-facebook {
+    background: #365899;
+}
+
+.btn-login-google {
+    background: #ea4335;
+}
+
+.btn-login-facebook:hover {
+    opacity: 0.8;
+}
+
+.btn-login-google:hover {
+    opacity: 0.8;
+}
+
+.form-input .line {
+    width: 100%;
+    height: 1px;
+    background: #EEE;
+    margin-bottom: 24px;
+}
+
+.option-auth {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.option-auth .option-left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.option-auth .option-left > p {
+    margin-bottom: 0;
+}
+
+.option-auth .option-left > button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: #01249C;
+}
+
+.option-auth .option-right > button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: #01249C;
+}
+
+.form-input .support > h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-input .support > p {
+    font-size: 14px;
+}
+
+.carousel {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    width: 300%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #EEFFF9;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    position:absolute;
+    top: 100px;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+}
+
+.carousel-caption > h3 {
+    color: #212f3f;
+}
+
+.carousel-caption > p {
+    color: #212f3f;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #C8FFED;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-dot.active {
+    background-color: #00D28C;
+}
