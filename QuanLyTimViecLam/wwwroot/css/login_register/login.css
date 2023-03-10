@@ -144,23 +144,24 @@
 }
 
 .option-auth .option-left {
-    display: flex;
+    display: flex;  
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .option-auth .option-left > p {
     margin-bottom: 0;
+    margin-right: 8px;
 }
 
-.option-auth .option-left > button {
+.option-auth .option-left > a {
     border: none;
     background-color: transparent;
     font-weight: 600;
     color: #01249C;
 }
 
-.option-auth .option-right > button {
+.option-auth .option-right > a {
     border: none;
     background-color: transparent;
     font-weight: 600;
@@ -214,7 +215,7 @@
     padding: 10px;
     text-align: center;
     position: absolute;
-    bottom: 150px;
+    top: 400px;
 }
 
 .carousel-caption > h3 {
@@ -227,7 +228,7 @@
 
 .carousel-dots {
     position: absolute;
-    bottom: 140px;
+    top: 550px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
