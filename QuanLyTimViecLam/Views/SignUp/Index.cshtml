@@ -34,8 +34,8 @@
                 <p class="title">Mật khẩu</p>
                 <div class="input-group">
                     <ion-icon name="key"></ion-icon>
-                    <input id="password" type="password" placeholder="Nhập mật khẩu" />
-                    <ion-icon name="eye-off" id="btnHide"></ion-icon>
+                    <input id="password-1" type="password" placeholder="Nhập mật khẩu" />
+                    <ion-icon name="eye-off" class="btnHide"></ion-icon>
                 </div>
             </div>
 
@@ -43,8 +43,8 @@
                 <p class="title">Xác nhận mật khẩu</p>
                 <div class="input-group">
                     <ion-icon name="key"></ion-icon>
-                    <input id="password" type="password" placeholder="Nhập lại mật khẩu" />
-                    <ion-icon name="eye-off" id="btnHide"></ion-icon>
+                    <input id="password-2" type="password" placeholder="Nhập lại mật khẩu" />
+                    <ion-icon name="eye-off" class="btnHide"></ion-icon>
                 </div>
             </div>
 
@@ -114,24 +114,29 @@
 
 
     <script>
-        let getIcon = document.getElementById("btnHide");
-        let getInputPas = document.getElementById("password");
-        let on = "eye";
-        let off = "eye-off";
 
-        getIcon.addEventListener("click", function () {
-            let currentIconName = getIcon.getAttribute("name");
+        // Lấy các elements cần thiết
+        const passwordInputs = document.querySelectorAll('input[type="password"]');
+        const toggleIcons = document.querySelectorAll('.btnHide');
 
-            if (currentIconName === on) {
-                getIcon.setAttribute("name", off);
-                getInputPas.setAttribute("type", "password");
-
+        // Hàm tái sử dụng để thay đổi icon và hiện/ẩn mật khẩu
+        function togglePasswordVisibility(inputEl, iconEl) {
+            const curIconName = iconEl.getAttribute('name');
+            if (curIconName === 'eye') {
+                iconEl.setAttribute('name', 'eye-off');
+                inputEl.setAttribute('type', 'text');
             } else {
-                getIcon.setAttribute("name", on);
-                getInputPas.setAttribute("type", "text");
+                iconEl.setAttribute('name', 'eye');
+                inputEl.setAttribute('type', 'password');
             }
-        })
+        }
 
+        // Thêm sự kiện click vào các icon ẩn/hiện mật khẩu
+        toggleIcons.forEach((iconEl, index) => {
+            iconEl.addEventListener('click', () => {
+                togglePasswordVisibility(passwordInputs[index], iconEl);
+            });
+        });
 
         //slider
         let slideIndex = 0;
@@ -164,7 +169,7 @@
         setInterval(() => {
             autoSlide();
             showSlide(slideIndex);
-        }, 5000000);
+        }, 5000);
 
         const dots = document.querySelectorAll('.carousel-dot');
         dots.forEach((dot, index) => {

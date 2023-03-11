@@ -77,3 +77,65 @@ h4 > a {
     margin-bottom: 4px;
 }
 
+.row-items {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #999;
+}
+
+.bottom-logo {
+    padding-top: 24px;
+}
+
+.bottom-logo .bottom-logo-left .bottom-logo-left-top {
+    display: flex;
+}
+
+.bottom-logo-left-top > a > img {
+    width: 120px;
+    height: auto;
+}
+
+.bottom-logo-left-top > p {
+    color: #FFF;
+    font-size: 13px;
+    margin-left: 12px;
+    width: 340px;
+}
+
+.bottom-logo-left-center > ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.bottom-logo-left-center > ul > li {
+    padding-right: 6px;
+
+}
+
+.bottom-logo-left-center > ul > li > a {
+    font-size: 12px;
+    height: 14px;
+    color: #999;
+    padding-right: 12px;
+    border-right: 1px solid #999;
+}
+
+.bottom-logo-left-center > ul > li:hover > a {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.bottom-logo-left-center > ul > li:last-child > a {
+    border: none;
+}
+
+.bottom-logo-left-bottom > p {
+    color: #999;
+    margin: 0;
+    font-size: 12px;
+}
+
+.bottom-logo-left-bottom > p .email {
+    color: #fff;
+}
+
