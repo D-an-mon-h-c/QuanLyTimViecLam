@@ -5,7 +5,7 @@
 
 .form-input {
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 .content .form-input {
@@ -246,4 +246,13 @@
 
 .carousel-dot.active {
     background-color: #00D28C;
+}
+
+.form-login-caption {
+    font-size: 13px;
+}
+
+.form-login > a {
+    font-size: 13px;
+    color: #01249C;
 }

@@ -32,4 +32,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=SignUp}/{action=SignUp}");
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=FogotPas}/{action=FogotPas}");
+
 app.Run();
